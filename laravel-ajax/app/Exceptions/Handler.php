@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Exceptions;
+namespace Imperio\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
