@@ -34,8 +34,6 @@ Paragrap        : 18px/1.6 '', Arial, sans-serif;
 Input, textarea : 14px/1.6 '', Arial, sans-serif;
 -------------------------------------------------------------------*/
 
-
-
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
@@ -2068,8 +2066,15 @@ input.num-product::-webkit-inner-spin-button {
 
 /*//////////////////////////////////////////////////////////////////
 [ Block2 ]*/
+
+.block2{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .block2-pic {
   position: relative;
+  width: 350px;
 }
 
 .block2-btn {
