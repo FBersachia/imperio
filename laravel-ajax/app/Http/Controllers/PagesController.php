@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function inicio(){
-      return view('index');
+      $products = \Imperio\Product::paginate();
+      return view('index', compact('products'));
     }
-
 }

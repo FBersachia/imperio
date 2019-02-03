@@ -8,6 +8,10 @@
 
 <body>
     <h1>HOLA</h1>
+    @foreach ($products as $product)
+      {{ $product->id}}
+        {{ $product->nombre}}
+    @endforeach
 </body>
 
 </html>
