@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@inicio');
+Route::get('inicio', 'PagesController@inicio')->name('inicio');
+
 
 Auth::routes();
 
