@@ -35,7 +35,7 @@
                     <a class="nav-link" href="{{ route('inicio') }}">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('productos') }}">Productos</a>
+                    <a class="nav-link" href="{{ route('listado') }}">Productos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('nosotras') }}">Sobre Nosotras</a>

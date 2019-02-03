@@ -11,8 +11,9 @@ class PagesController extends Controller
       return view('index', compact('products'));
     }
 
-    public function productos(){
-      return view('products');
+    public function products(){
+      $products = \Imperio\Product::paginate();
+      return view('product-list', compact('products'));
     }
 
     public function nosotras(){
