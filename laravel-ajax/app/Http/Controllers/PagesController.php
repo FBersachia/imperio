@@ -10,4 +10,16 @@ class PagesController extends Controller
       $products = \Imperio\Product::paginate();
       return view('index', compact('products'));
     }
+
+    public function productos(){
+      return view('products');
+    }
+
+    public function nosotras(){
+      return view('about');
+    }
+
+    public function contacto(){
+      return view('contact');
+    }
 }

@@ -26,6 +26,15 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="{{ route('inicio') }}">Inicio <span class="sr-only">(current)</span></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('productos') }}">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('nosotras') }}">Sobre Nosotras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('contacto') }}">Contacto</a>
+                </li>
             </ul>
             <ul class="navbar-nav mr-0">
                 <li class="nav-item">
