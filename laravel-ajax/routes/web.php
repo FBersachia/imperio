@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'PagesController@inicio');
+Route::get('nav-footer', 'PagesController@inicio');
 Route::get('inicio', 'PagesController@inicio')->name('inicio');
 
 
