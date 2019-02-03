@@ -2074,6 +2074,7 @@ input.num-product::-webkit-inner-spin-button {
 
 .block2-pic {
   position: relative;
+  border-radius: 3px;
   width: 350px;
 }
 

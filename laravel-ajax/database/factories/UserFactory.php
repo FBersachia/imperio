@@ -22,14 +22,3 @@ $factory->define(Imperio\User::class, function (Faker $faker) {
         'remember_token' => str_random(10),
     ];
 });
-
-
-$factory->define(Imperio\Product::class, function (Faker $faker) {
-  $precio = rand(500, 5000);
-    return [
-        'nombre' => $faker->text(24),
-        'descripcion' => $faker->text(150),
-        'precio' => $precio,
-        'imagen' => $faker->text(24),
-    ];
-});

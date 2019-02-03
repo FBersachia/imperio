@@ -153,12 +153,18 @@
     </div>
 </div>
 
+
+
+
+
+
+
 <div class="container">
 <div class="row">
   @foreach ($products as $producto)
 
-    <div class="block2 m-x-auto">
-        <div class="block2-pic hov-img0 ">
+    <div class="block2 m-x-auto p-b-30">
+        <div class="block2-pic hov-img0 {{ $producto->genero}} {{ $producto->tipo}}">
             <img src="{{ URL::asset('productos/'.$producto->imagen.'-1.jpg' )}}">
 
             <a href="./product-detail.php?id={{ $producto->id }}>" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
@@ -175,16 +181,23 @@
                 </span>
             </div>
 
-          <!--  <div class="block2-txt-child2 flex-r p-t-3">
+           <div class="block2-txt-child2 flex-r p-t-3">
                 <a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-                    <img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
-                    <img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
+                    <img class="icon-heart1 dis-block trans-04" src="{{ URL::asset('icons/icon-heart-01.png') }}" alt="ICON">
+                    <img class="icon-heart2 dis-block trans-04 ab-t-l" src="{{ URL::asset('icons/icon-heart-02.png') }}" alt="ICON">
                 </a>
-            </div> -->
+            </div>
         </div>
     </div>
 
 @endforeach
+
+<!-- Load more -->
+<div class="flex-c-m flex-w w-full p-t-45 p-b-30">
+  <a href="product.html" class="flex-c-m stext-101 cl5 size-103 bg2 bor1 hov-btn1 p-lr-15 trans-04">
+    Ver mas
+  </a>
+</div>
 
 </div>
 </div>
