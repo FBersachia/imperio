@@ -24,27 +24,27 @@
                 <div class="wrap-pic-w pos-relative">
                    <img src="{{ URL::asset('productos/'.$product->imagen.'-1.jpg' )}}" alt="IMG-PRODUCT">
 
-                  <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-01.jpg">
+                  <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="{{ URL::asset('productos/'.$product->imagen.'-1.jpg' )}}">
+                    <i class="zmdi zmdi-fullscreen"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="item-slick3" data-thumb="{{ URL::asset('productos/'.$product->imagen.'-2.jpg' )}}">
+                <div class="wrap-pic-w pos-relative">
+                     <img src="{{ URL::asset('productos/'.$product->imagen.'-2.jpg' )}}" alt="IMG-PRODUCT">
+
+                  <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="{{ URL::asset('productos/'.$product->imagen.'-2.jpg' )}}">
                     <i class="fa fa-expand"></i>
                   </a>
                 </div>
               </div>
 
-              <div class="item-slick3" data-thumb="./productos/{{ $product->imagen}}2.jpg">
+              <div class="item-slick3" data-thumb="{{ URL::asset('productos/'.$product->imagen.'-3.jpg' )}}">
                 <div class="wrap-pic-w pos-relative">
-                     <img src="./productos/{{ $product->imagen}}2.jpg" alt="IMG-PRODUCT">
+                  <img src="{{ URL::asset('productos/'.$product->imagen.'-3.jpg' )}}" alt="IMG-PRODUCT">
 
-                  <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-02.jpg">
-                    <i class="fa fa-expand"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="item-slick3" data-thumb="./productos/{{ $product->imagen}}3.jpg">
-                <div class="wrap-pic-w pos-relative">
-                  <img src="./productos/{{ $product->imagen}}3.jpg" alt="IMG-PRODUCT">
-
-                  <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-03.jpg">
+                  <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="{{ URL::asset('productos/'.$product->imagen.'-3.jpg' )}}">
                     <i class="fa fa-expand"></i>
                   </a>
                 </div>
@@ -68,7 +68,13 @@
               {{ $product->descripcion}}
           </p>
         </div>
+
+        <div class="m-t-150">
+          <a href="#" class="m-r-50">Pagar</a>
+          <a href="#" class="m-l-50">Añadir al carrito</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
+@endsection

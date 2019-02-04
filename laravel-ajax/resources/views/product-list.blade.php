@@ -56,7 +56,7 @@
           <div class="block2-pic hov-img0 {{ $producto->genero}} {{ $producto->tipo}}">
               <img src="{{ URL::asset('productos/'.$producto->imagen.'-1.jpg' )}}">
 
-              <a href="./product-detail.php?id={{ $producto->id }}>" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
+              <a href="{{ URL::to("product-detail/{$producto->id}") }}" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
                   Ver
               </a>
           </div>
