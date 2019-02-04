@@ -23,4 +23,9 @@ class PagesController extends Controller
     public function contacto(){
       return view('contact');
     }
+
+    public function detalle($id){
+      $product = \Imperio\Product::findOrFail($id);
+        return \View::make('product-detail', compact('product'));
+    }
 }

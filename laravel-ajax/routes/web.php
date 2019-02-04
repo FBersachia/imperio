@@ -21,6 +21,8 @@ Route::get('nosotras', 'PagesController@nosotras')->name('nosotras');
 
 Route::get('contacto', 'PagesController@contacto')->name('contacto');
 
+Route::get('product-detail/{id}', 'PagesController@detalle');
+
 
 Auth::routes();
 
