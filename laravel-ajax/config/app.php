@@ -165,6 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
+         Imperio\Providers\ShoppingCartProvider::class,
 
         /*
          * Application Service Providers...

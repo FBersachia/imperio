@@ -43,7 +43,11 @@
             </ul>
             <ul class="navbar-nav mr-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Carrito</a>
+                    <a class="nav-link" href="#">Carrito
+                      <span class="circle-shopping-cart">
+                        {{ $shopping_cart->productsSize()}}
+                      </span>
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Favoritos</a>
