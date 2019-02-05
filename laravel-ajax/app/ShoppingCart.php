@@ -8,8 +8,16 @@ class ShoppingCart extends Model
 {
     protected $fillable = ['status'];
 
+    public function inShoppingCarts(){
+      return $this->hasManny('Imperio\InShoppingCart');
+    }
+
+    public function products(){
+      return $this->belongsToMany('Imperio\Product', 'in_shopping_carts');
+    }
+
     public function productsSize(){
-      return $this->id;
+      return $this->products()->count();
     }
 
     public static function findOrCreateBySessionID($shopping_cart_id){
