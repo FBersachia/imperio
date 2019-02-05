@@ -23,6 +23,9 @@ Route::get('contacto', 'PagesController@contacto')->name('contacto');
 
 Route::get('product-detail/{id}', 'PagesController@detalle');
 
+Route::resource('in_shopping_carts', 'InShoppingCartsController', [
+    'only' => ['store', 'destroy']
+]);
 
 Auth::routes();
 

@@ -71,7 +71,7 @@
 
         <div class="m-t-150">
           <a href="#" class="m-r-50">Pagar</a>
-          <a href="#" class="m-l-50">Añadir al carrito</a>
+          <a href="#" class="m-l-50">@include('form', ['product' => $product])</a>
         </div>
       </div>
     </div>
