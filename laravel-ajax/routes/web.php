@@ -23,6 +23,8 @@ Route::get('contacto', 'PagesController@contacto')->name('contacto');
 
 Route::get('product-detail/{id}', 'PagesController@detalle');
 
+Route::get('carrito', 'ShoppingCartsController@index')->name('carrito');
+
 Route::resource('in_shopping_carts', 'InShoppingCartsController', [
     'only' => ['store', 'destroy']
 ]);

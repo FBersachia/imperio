@@ -20,6 +20,10 @@ class ShoppingCart extends Model
       return $this->products()->count();
     }
 
+    public function total(){
+      return $this->products()->sum('precio');
+    }
+
     public static function findOrCreateBySessionID($shopping_cart_id){
         if ($shopping_cart_id) {
           return ShoppingCart::findBySession($shopping_cart_id);
